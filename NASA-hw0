@@ -1,0 +1,161 @@
+-NA
+<True or False>
+1. True.When we search for a website, DNS will store the record on its cache so that we can find the website faster next time.
+reference:http://linux.vbird.org/linux_server/0350dns.php
+
+2.False.TCP provides reliable data transfer, however, it costs more time.In contrast, in UDP, the server side will not send reply(ACK = 1) to the client side, so it gots faster than TCP.For those cases which are instantaneous or have a great amount of data we will use UDP rather than TCP.Instant Messaging is an example.
+reference:http://linux.vbird.org/linux_server/0110network_basic.php#tcpip_network_route
+          http://eportfolio.lib.ksu.edu.tw/~4990E069/blog?node=000000026
+
+3.True.When bandwidth throttling happens, VPN can increase download speed.Because your surfing acts will be hidden so that your internet service provider cannot limit your bandwidth.
+reference:https://thevpn.guru/can-vpn-improve-download-speed/
+          https://www.youtube.com/watch?v=M0hHsejeNUw
+
+4.True.We can transform private IP into public IP through NAT server.And at the same time, NAT server will store the record of private IP and public IP for receiving packet.
+reference:http://linux.vbird.org/linux_server/0250simple_firewall.php#nat
+
+5.False.DHCP is not necessary in configuring private IP of a device.If you have only few devices need to get private IP, manual configuring is enough. 
+reference:http://linux.vbird.org/linux_server/0340dhcp.php
+
+6.False.In certain cases there could be more than one IP on a device.If a device have multiple NICs on it or have multiple interface on its NIC(IP alias), it is possible to have multiple IPs on a device.
+reference:http://bluelove1968.pixnet.net/blog/post/222286729-%E5%A4%9A-ip-%E8%88%87-router-%E7%9A%84%E6%9E%B6%E8%A8%AD
+          http://linux.vbird.org/linux_server/0230router.php#arp_proxy
+
+7.False.Public IP is unique while private IP isn't.In different domains, it is allowed to have multiple devices with the same IP(private IP). 
+reference:http://linux.vbird.org/linux_server/0110network_basic.php#tcpip_network_netmask
+          https://www.zhihu.com/question/21150632
+
+8.False.The number of devices which connect to network and the capabilities of themselves will influence the speed of connection.The more devices, the less speed we will get.Besides, wired connection is faster than wireless connection.
+reference:https://followthefiber.net/wp-content/uploads/2017/08/ADAMS-FIBER-GIGABIT-FAQs.pdf
+
+9.True.Firewall will follow the rules you set to inspect the packet.So the order of the rules is significant.
+reference:http://linux.vbird.org/linux_server/0250simple_firewall.php
+
+10.False.In 2017, Belgium researchers had indicated the vulnerability of WPA2.They used an attack called KRACKs to crack WPA2.
+reference:https://www.ithome.com.tw/news/117583
+          https://www.inside.com.tw/article/10809-wpa2breaking
+          https://www.ithome.com.tw/tech/96292
+
+11.False.Typically, router is used to connect two different domain, but traffic between devices is possible to pass through switch.Switch can be used in LAN for connecting two specific devices instead of connecting all devices together which hub does.
+reference:https://giboss.pixnet.net/blog/post/26798642-hub%28%E9%9B%86%E7%B7%9A%E5%99%A8%29%E3%80%81bridge%28%E6%A9%8B%E6%8E%A5%E5%99%A8%29%E3%80%81switch%28%E4%BA%A4%E6%8F%9B%E5%99%A8%29%E8%88%87rou
+          http://linux.vbird.org/linux_server/0230router.php#route_what
+          http://peso.pixnet.net/blog/post/30552186-router-%3B-switch-%3B-hub-%E5%B7%AE%E7%95%B0
+          http://linux.vbird.org/linux_server/0110network_basic.php#tcpip_network_head
+12.False.Although 5G has the higher speed than 2.4G, 2.4G can spread farther than 5G.Since 5G wireless band has weak penetration, it is not suitable to use in buildings with a lot of obstacles, like walls.
+reference:https://www.techbang.com/posts/54296-the-ultimate-wi-fi-signal-enhancement-concept-knowledge-wi-fi-wireless-local-area-networks-11-essential-concepts-to-clarify
+          https://kknews.cc/zh-tw/tech/vg8yx2.html
+
+<Short Answer>
+1.
+The five layers are Physical Layer, Link Layer, Network Layer, Transport Layer, and Application Layer respectively.First, in Physical Layer, bits of the packet will be changed to analog signal and then send it to another machine(or in reverse order).NIC is an example for Physical Layer.Second, in Link Layer, each packet will be sured that it can be transmitted to another device stably and sucessfully.Switch in an example for Link Layer.Third, in Network Layer, it manages the connection and route between devices, and IP address is also defined in this layer.Router is an example for Network Layer.Fourth, in Transport Layer, it decides the form of connection between devices and ensures the packet be sent sucessfully and correctly.The service like TCP is an example for Transport Layer.Last, in Application Layer, it decides what protocal to use according to the application we use.And it can also transmit/receive data to/from the application, and then show to the user.The service like FTP is an example for Apllication Layer.
+reference:http://linux.vbird.org/linux_server/0110network_basic.php#whatisnetwork_tcpip
+          https://www.csie.ntu.edu.tw/~hsinmu/courses/_media/nasa_18spring/slides/internet_protocol_stack.pdf
+          https://zh.wikipedia.org/wiki/%E7%89%A9%E7%90%86%E5%B1%82
+          https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82
+          https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82
+          https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E5%B1%82
+
+2.
+With IPv4, it just has 32 bits in an address.With the development of technology, IP will be insufficient in the near future if we still use IPv4.That's what IPv4 is.There are some solutions for this problem.One is the use of private IP and NAT.By using private IP, we can reuse private IP in different LANs.And in the same LAN, those private can use the same public IP by using NAT.Another is changing IPv4 to IPv6.With IPv6, it has 128 bits in an address.So that we have more IP to use.
+reference:http://linux.vbird.org/linux_server/0110network_basic.php
+          http://linux.vbird.org/linux_server/0250simple_firewall.php#nat
+
+3.
+DoS and DDoS are the ways to attack our computer through sending a large amount of insignificant message(Message Flood) to occupy the bandwidth or consume the resource of the destination device.The difference between DoS and DDoS is that DoS uses one device to attack our computer(one-to-one) while DDoS will use more than one conquered devices to attack our computer(many-to-one).
+reference:https://isms.ym.edu.tw/files/14-1267-11351,r12-1.php
+          http://www.nuu.edu.tw/UIPWeb/wSite/ct?xItem=61292&ctNode=11724&mp=56
+          https://blog.xuite.net/p2s1t3a6/vanilla/398689868-DOS%E8%88%87DDOS%E7%9A%84%E5%B7%AE%E5%88%A5
+          https://zh.wikipedia.org/wiki/%E9%98%BB%E6%96%B7%E6%9C%8D%E5%8B%99%E6%94%BB%E6%93%8A
+
+4.
+MAC address is an address with 6 bytes(48 bits).Each NIC has its unique MAC address.First 3 bytes in MAC address represent the code of company, decided by IEEE.The other 3 bytes represent the code of the device, decided by the company. Destination MAC address and source MAC address are indispensable when transmitting data between two devices.In the process of transmitting data should be in the same LAN.If you want to transmit data to another LAN, you should realize it by using some specific devices such as router(have more than one NICs(MAC address) to connect two different LAN).Different from IP address, destination and source MAC addresses will change in every hop while source and destination IP addresses will not change in the process(except for some special conditions such as NAT).
+reference:http://linux.vbird.org/linux_server/0110network_basic.php#tcpip_link_mac
+          https://zh.wikipedia.org/wiki/MAC%E5%9C%B0%E5%9D%80
+          https://www.zhihu.com/question/21546408
+          https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2
+
+<Command line utility>
+1.參考：https://jameshfisher.com/2017/08/10/dns-tracing.html
+        https://ns1.com/blog/using-dig-trace
+        https://ithelp.ithome.com.tw/questions/10149980
+        (https://simpledns.com/lookup-dg)
+
+2.參考：https://www.cyberciti.biz/faq/traceroute-tracepath-unix-linux-command/
+        https://docs.oracle.com/cd/E23824_01/html/821-1453/ipv6-admintasks-72.html
+3.參考：https://www.cyberciti.biz/faq/linux-list-network-interfaces-names-command/
+        https://www.opencli.com/linux/ip-command
+
+-SA
+2.
+info Pittheus
+reference:http://man.linuxde.net/info
+
+3.
+pwd
+reference:http://linux.vbird.org/linux_basic/0220filemanager.php
+
+4.NASA{1_4m_y0ur_f4th3r}
+cd ship
+cd Theseus's_Room
+cd big_rock
+ls -al
+cd ..
+chmod -R 700 big_rock
+cd ..
+ls -al
+chmod -R 700 Theseus's_Room
+cd Theseus's_Room
+mv big_rock/sandals* big_rock/sword* ./
+rm -r big_rock
+file Aegeus
+./Aegeus
+
+reference:http://linux.vbird.org/linux_basic/0220filemanager.php#cat
+          https://zhidao.baidu.com/question/2117373021880988387
+          http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm
+          http://linux.vbird.org/linux_basic/0220filemanager.php#file
+
+5.
+(whereis captain)
+ls -a
+vim .captain
+reference:http://linux.vbird.org/linux_basic/0220filemanager.php#ls
+
+6.NASA{Y0U_G07_R1D_0f_7h3_6Ug5}
+ls -al
+cd ship
+ls -al
+file SINKING_SHIP
+cat SINKING_SHIP
+grep -i "bugs" SINKING_SHIP
+cd ..
+chmod 700 ship
+cd ship
+chmod 700 SINKING_SHIP
+sed -i 's/[B,b][U,u][G,g][S,s]//g' SINKING_SHIP
+cat SINKING_SHIP
+grep "NASA" SINKING_SHIP
+reference:https://blog.csdn.net/yanlaifan/article/details/52766109
+          http://linux.vbird.org/linux_basic/0330regularex.php#sed_replace
+          https://bbs.csdn.net/topics/300220008
+
+7.NASA{3mp7y_70Olb0x_:(}
+-(file THE_OLD_MAN)
+-(./THE_OLD_MAN)
+sort KEY | uniq -u
+(KEY{>>UcMI})
+reference:http://linux.vbird.org/linux_basic/0320bash.php#sort
+          https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
+          https://www.arthurtoday.com/2013/10/ubuntu-sort-uniq-remove-duplicate-lines.html
+
+8.NASA{7h3seus_4llm1gh7y}
+cd ship
+ls -al
+file beast
+./beast &
+ps
+kill -15 21633
+reference:http://dontpkme.blogspot.com/2013/11/ps-kill-task-manager-in-linux.html
+          http://linux.vbird.org/linux_basic/0440processcontrol.php#killall
+          http://linux.vbird.org/linux_basic/0440processcontrol/0440processcontrol.php
+          https://blog.csdn.net/ithomer/article/details/9402431
