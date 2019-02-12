@@ -159,3 +159,15 @@ reference:http://dontpkme.blogspot.com/2013/11/ps-kill-task-manager-in-linux.htm
           http://linux.vbird.org/linux_basic/0440processcontrol.php#killall
           http://linux.vbird.org/linux_basic/0440processcontrol/0440processcontrol.php
           https://blog.csdn.net/ithomer/article/details/9402431
+
+9.NASA{t00_l4t3}
+cd /
+find -name white_mast
+cd opt
+ls -al
+file white_mast
+cat white_mast
+reference:https://blog.gtwang.org/linux/unix-linux-find-command-examples/
+
+10.NASA{1000_po1nt_s0_e45y_huh}
+
