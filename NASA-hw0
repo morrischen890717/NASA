@@ -1,6 +1,6 @@
 -NA
 <True or False>
-1. True.When we search for a website, DNS will store the record on its cache so that we can find the website faster next time.
+1.True.When we search for a website, DNS will store the record on its cache so that we can find the website faster next time.
 reference:http://linux.vbird.org/linux_server/0350dns.php
 
 2.False.TCP provides reliable data transfer, however, it costs more time.In contrast, in UDP, the server side will not send reply(ACK = 1) to the client side, so it gots faster than TCP.For those cases which are instantaneous or have a great amount of data we will use UDP rather than TCP.Instant Messaging is an example.
@@ -86,12 +86,15 @@ reference:http://linux.vbird.org/linux_server/0110network_basic.php#tcpip_link_m
         https://www.opencli.com/linux/ip-command
 
 -SA
-2.
+1.NASA{5pi0rad™}
+ssh b07902117@nasa-hw0.csie.ntu.edu.tw
+
+2.NASA{Y0u_w1ll_h4v3_4_50n}
 info Pittheus
 reference:http://man.linuxde.net/info
 
-3.
-pwd
+3.NASA{D3sc3nd4n7_0f_G0d}
+pwd(/home/NASA{D3sc3nd4n7_0f_G0d}/b07902117)
 reference:http://linux.vbird.org/linux_basic/0220filemanager.php
 
 4.NASA{1_4m_y0ur_f4th3r}
@@ -100,24 +103,26 @@ cd Theseus's_Room
 cd big_rock
 ls -al
 cd ..
-chmod -R 700 big_rock
+chmod -R 700 big_rock(change mode, r:4, w:2, and x:1, so 700 represents rwx for owner, --- for group, and --- for others.-R will change the modes of all the files under the directory)
 cd ..
 ls -al
 chmod -R 700 Theseus's_Room
 cd Theseus's_Room
-mv big_rock/sandals* big_rock/sword* ./
-rm -r big_rock
+mv big_rock/sandals* big_rock/sword* ./ (move the files which contain 'sandals' and 'sword' in the beginning of the name to Theseus's_Room)
+rm -r big_rock (rm -r will remove all the files under the directory)
 file Aegeus
-./Aegeus
+./Aegeus (execute Aegeus file)
 
 reference:http://linux.vbird.org/linux_basic/0220filemanager.php#cat
           https://zhidao.baidu.com/question/2117373021880988387
           http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm
           http://linux.vbird.org/linux_basic/0220filemanager.php#file
 
-5.
-(whereis captain)
-ls -a
+5.NASA{0H_my_d34r_fr1end}
+cd ship
+cd master_room
+ls -al(ls -a will list all the files, including hidden file('.' in the beginning of the file's name))
+file .captain(check the type of the file)
 vim .captain
 reference:http://linux.vbird.org/linux_basic/0220filemanager.php#ls
 
@@ -126,13 +131,13 @@ ls -al
 cd ship
 ls -al
 file SINKING_SHIP
-cat SINKING_SHIP
-grep -i "bugs" SINKING_SHIP
+cat SINKING_SHIP (read the content of the file)
+grep -i "bugs" SINKING_SHIP (pick out where the "bugs" in the content.Add -i to ignore upper case or lower case)
 cd ..
 chmod 700 ship
 cd ship
 chmod 700 SINKING_SHIP
-sed -i 's/[B,b][U,u][G,g][S,s]//g' SINKING_SHIP
+sed -i 's/[B,b][U,u][G,g][S,s]//g' SINKING_SHIP (replace "bugs"(whether upper case or lower case for each character) with '', that is, delete it.)
 cat SINKING_SHIP
 grep "NASA" SINKING_SHIP
 reference:https://blog.csdn.net/yanlaifan/article/details/52766109
@@ -140,10 +145,18 @@ reference:https://blog.csdn.net/yanlaifan/article/details/52766109
           https://bbs.csdn.net/topics/300220008
 
 7.NASA{3mp7y_70Olb0x_:(}
--(file THE_OLD_MAN)
--(./THE_OLD_MAN)
-sort KEY | uniq -u
-(KEY{>>UcMI})
+cd ship
+ls -al
+cd master_room
+ls -al
+file THE_OLD_MAN
+./THE_OLD_MAN
+file KEY
+cat KEY
+sort KEY | uniq -u (KEY{>>UcMI})
+file tool_box.zip
+vim tool_box.zip
+(key in the KEY)
 reference:http://linux.vbird.org/linux_basic/0320bash.php#sort
           https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
           https://www.arthurtoday.com/2013/10/ubuntu-sort-uniq-remove-duplicate-lines.html
@@ -152,17 +165,18 @@ reference:http://linux.vbird.org/linux_basic/0320bash.php#sort
 cd ship
 ls -al
 file beast
-./beast &
-ps
-kill -15 21633
+./beast & (add & will execute the file in the background)
+ps (check out the PID of baest(21633))
+kill -15 21633 (close the file which PID is is 21633.Add -15 will close it with the normal way)
 reference:http://dontpkme.blogspot.com/2013/11/ps-kill-task-manager-in-linux.html
           http://linux.vbird.org/linux_basic/0440processcontrol.php#killall
           http://linux.vbird.org/linux_basic/0440processcontrol/0440processcontrol.php
           https://blog.csdn.net/ithomer/article/details/9402431
 
 9.NASA{t00_l4t3}
-cd /
-find -name white_mast
+cd / (go to the root directory)
+find -name white_mast (find the file which name is "white_mast")
+(./opt/white_mast)
 cd opt
 ls -al
 file white_mast
@@ -170,4 +184,31 @@ cat white_mast
 reference:https://blog.gtwang.org/linux/unix-linux-find-command-examples/
 
 10.NASA{1000_po1nt_s0_e45y_huh}
+cd ship
+ls -al
+vim pong_game.py
+man Pittheus
+Pittheus -s
+Pittheus -a
+(use https://www.devglan.com/online-tools/aes-encryption-decryption
+     https://www.base64decode.org/                       to decrypt)
+python3 pong_game.py(keep trying you will discover that there are two picture.One is ship.The other is cat)
+nc -v 127.0.0.1 10101 (test if the specific port of the server has been opened)
+(How did you see me?
+Did you see the clue left in man?
+Let me tell you something else,
+Theseus is special
+also, finding logo2 may help you
+give me your mode:)
+cd /
+ls -al
+cd mnt
+ls -al
+cd nasa
+ls -al(there are three files, logo2, Meow, and Zeus)
+cd ~
+cd ship
+nc -v 127.0.0.1 10101
+(key in /mnt/nasa/Zeus)
+reference:https://blog.gtwang.org/linux/linux-utility-netcat-examples/
 
